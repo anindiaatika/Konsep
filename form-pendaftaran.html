@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran HIMA-CUP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">HIMA-CUP</div>
+            <nav>
+                <ul>
+                    <li><a href="landingPage.html">Home</a></li>
+                    <li><a href="landingPage.html#about">About</a></li>
+                    <li><a href="landingPage.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content">
+            <h1>Pendaftaran Peserta HIMA-CUP</h1>
+            <p>Bergabunglah di HIMA-CUP dan tunjukkan kemampuan terbaik Anda dalam kompetisi olahraga bergengsi!</p>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <h2>Form Pendaftaran Peserta HIMA-CUP</h2>
+            
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="nomor">Nomor Telepon:</label>
+            <input type="tel" id="nomor" name="nomor" required>
+
+            <label for="tanggal">Tanggal Lahir:</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select id="jenis_kelamin" name="jenis_kelamin" required>
+                <option value="">Pilih Jenis Kelamin</option>
+                <option value="male">Laki-Laki</option>
+                <option value="female">Perempuan</option>
+                <option value="other">Lainnya</option>
+            </select>
+
+            <label for="cabang_olahraga">Cabang Olahraga:</label>
+            <select id="cabang_olahraga" name="cabang_olahraga" required>
+                <option value="">Pilih Cabang Olahraga</option>
+                <option value="sepak bola">Sepak Bola</option>
+                <option value="basket">Basket</option>
+                <option value="futsal">Futsal</option>
+                <option value="voli">Voli</option>
+                <option value="bulutangkis">Bulutangkis</option>
+                
+            </select>
+
+            <label>Status:</label>
+            <div class="radio-group">
+                <input type="radio" id="pelajar" name="status" value="pelajar">
+                <label for="pelajar">Pelajar</label>
+                
+                <input type="radio" id="mahasiswa" name="status" value="mahasiswa">
+                <label for="mahasiswa">Mahasiswa</label>
+
+                <input type="radio" id="pekerja" name="status" value="pekerja">
+                <label for="pekerja">Pekerja</label>
+            </div>
+
+                <label for="foto_ktm" class="form-label">Upload Foto KTM (Kartu Tanda Mahasiswa):</label>
+                <input type="file" id="foto_ktm" name="foto_ktm" class="form-control" accept=".jpg, .jpeg, .png" required>
+
+            <label for="message">Pesan atau Komentar:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tuliskan pesan atau komentar Anda di sini"></textarea>
+
+            <button type="submit">Daftar Sekarang</button>
+        </form>
+    </div>
+</body>
+</html>
